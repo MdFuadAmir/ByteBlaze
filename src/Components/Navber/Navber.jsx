@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const navberData = <>
-    <NavLink to={"/"}>Home</NavLink>
-    <NavLink to={"/blogs"}>Blogs</NavLink>
-    <NavLink to={"/bookmarks"}>BookMarks</NavLink>
+    <NavLink to={"/"} className={({isActive})=> isActive? 'font-bold text-blue-600': ""}>Home</NavLink>
+    <NavLink to={"/blogs"} className={({isActive})=> isActive? 'font-bold text-blue-600': ""}>Blogs</NavLink>
+    <NavLink to={"/bookmarks"} className={({isActive})=> isActive? 'font-bold text-blue-600': ""}>BookMarks</NavLink>
 </>
 const Navber = () => {
     const [theme,setTheme] = useState("light");
