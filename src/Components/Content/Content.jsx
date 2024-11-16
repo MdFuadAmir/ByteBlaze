@@ -3,9 +3,11 @@ import { useLoaderData } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 
 
+
 const Content = () => {
     const blog = useLoaderData();
     const {cover_image,title,tags,body_html} = blog;
+    
     return (
         <div>
             <div className="mx-auto group hover:no-underline focus:no-underline border-2 border-gray-500 border-opacity-30  rounded-lg duration-300 p-2">

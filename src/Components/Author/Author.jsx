@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const Author = () => {
     const blog = useLoaderData();
-    const {name,username,twitter_username,github_username,user_id,website_url,profile_image,profile_image_90} = blog.user;
+    const {name,username,twitter_username,github_username,website_url,profile_image} = blog.user;
 
     return (
         <div className="flex flex-col justify-center p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
