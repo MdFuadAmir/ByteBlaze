@@ -17,7 +17,7 @@ import EmptyState from "../../Components/EmptyState/EmptyState";
         const storedBlogs = getBlogs();
         setBlogs(storedBlogs)
 	}
-    if(blogs.length<1) return <EmptyState massage={'No Bookmark Available'}/>
+    if(blogs.length<1) return <EmptyState massage={'No Bookmark Available'} label={'Go To Blogs'} address={'/blogs'}/>
     return (
         <div className="p-6">
             <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
