@@ -3,11 +3,9 @@ import placeholderimage from"../../assets/404.jpg"
 import { MdDelete } from "react-icons/md";
 import { deleteBlog } from '../../Utils/storage';
 
-const BlogCard = ({blog,deletable}) => {
+const BlogCard = ({blog,deletable,handleDelete}) => {
     const {cover_image,description,title,published_at,id} = blog;
-	const handleDelete = id =>{
-		deleteBlog(id)
-	}
+	
     return (
             <div className='flex relative'>
 			<Link to={`/blog/${id}`} className="max-w-sm mx-auto group hover:no-underline focus:no-underline  transition border-2 border-pink-600 border-opacity-30 hover:scale-105 hover:border-pink-600 rounded-lg duration-300">
